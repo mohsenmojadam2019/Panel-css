@@ -1,0 +1,364 @@
+/***** General Style *****/
+
+@font-face {
+    font-family: shabnam;
+    src: url('../fonts/Shabnam.eot');
+    src: url('../fonts/Shabnam.ttf') format('truetype'), url('../fonts/Shabnam.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    direction: rtl;
+    font-family: shabnam;
+}
+
+.main {
+    display: flex;
+}
+
+
+
+
+.sidebar {
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+}
+
+.sidebar .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.sidebar .date h3 {
+    color: #6156e3;
+    font-size: 32px;
+}
+
+.sidebar .date h5 {
+    color: #7a8aea;
+}
+
+.sidebar .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.sidebar .profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.sidebar .profile .profile-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.sidebar .profile .profile-name h4 {
+    font-weight: normal;
+    padding-bottom: 3px;
+}
+
+.sidebar .profile .profile-name h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    margin: 5px;
+    color: #a5a5a5;
+    font-weight: normal;
+}
+
+.sidebar .profile .profile-name h5>i {
+    margin-right: 20px;
+    font-size: 11px;
+}
+
+.side-header {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sidebar .nav ul {
+    margin-right: 38px;
+}
+
+.sidebar .nav ul li {
+    margin-top: 15px;
+    position: relative;
+}
+
+.sidebar .nav ul li.active a {
+    color: #6354e3;
+}
+
+.sidebar .nav ul li i {
+    margin-left: 10px;
+}
+
+.sidebar .nav ul li a {
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.sidebar .nav ul li span {
+    width: 80%;
+    position: absolute;
+    right: 73%;
+    color: #bdbdbd;
+    font-size: 12px;
+}
+
+.sidebar .nav ul li span.num {
+    position: absolute;
+    right: 71%;
+    bottom: 5%;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #a8a7a7;
+    background-color: #f3365c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+
+.cont {
+    width: 80%;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.header {
+    width: 100%;
+    height: 20vh;
+}
+
+.cont .header ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cont .header ul li {
+    width: 23%;
+    height: 15vh;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.cont .header ul li p {
+    width: 100%;
+    color: #a5a5a5;
+    margin: 8px 0;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.cont .header ul li p span {
+    width: 100%;
+    color: #6254e5;
+}
+
+.cont .header ul li:nth-child(3) span {
+    color: #13cb8d;
+}
+
+.cont .header ul li:nth-child(4) span {
+    color: #e63a3a;
+}
+
+.cont .header ul li .pic {
+    width: 24%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    border-radius: 5px 0 0 5px;
+    background: linear-gradient(0deg, rgba(100, 111, 227, 1) 50%, rgba(124, 97, 228, 1) 100%);
+}
+
+.cont .header ul li:nth-child(2) .pic {
+    background: linear-gradient(0deg, rgba(243, 161, 33, 1) 50%, rgba(253, 196, 57, 1) 100%);
+}
+
+.cont .header ul li:nth-child(3) .pic {
+    background: linear-gradient(0deg, rgba(237, 68, 87, 1) 50%, rgba(243, 70, 123, 1) 100%);
+}
+
+.cont .header ul li:last-child .pic {
+    background: linear-gradient(0deg, rgba(94, 128, 252, 1) 50%, rgba(40, 191, 246, 1) 100%);
+}
+
+
+
+
+.art {width: 80vw;height: calc(40vh - 24px);display: flex;}
+.art .edit {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 12px;
+    background: linear-gradient(0deg, rgba(100, 111, 227, 1) 50%, rgba(124, 97, 228, 1) 100%);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.art .edit i {
+    color: #ffffff;
+    font-weight: lighter;
+}
+
+.art .summary {
+    width: 30%;
+    height: 100%;
+    margin-right: 12px;
+    margin-left: 12px;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.art .summary p {
+    height: 15%;
+    font-size: 16px;
+    border-bottom: 2px solid #6257e4;
+}
+
+.art .summary button {
+    height: 10%;
+    padding: 5px 10px;
+    border: 1px solid #c5c8cd;
+    border-radius: 5px;
+    outline: none;
+    font-family: shabnam;
+    color: #797f8b;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.art .summary button:hover {
+    color: #595c63;
+}
+
+.art .summary button i {
+    margin-right: 5px;
+}
+
+
+
+
+.tick {
+    width: 80vw;
+    height: calc(40vh - 24px);
+    display: flex;
+    margin-top: 10px;
+}
+
+.tick .tick-star {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 12px 12px 12px 0;
+    background: #fff;
+    color: #a8a7a7;
+    font-size: 16px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.tick .tick-star ul {
+    width: 90%;
+    height: 100%;
+    display: flex;
+}
+
+.tick .tick-star ul li {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.tick .tick-star ul li.active {
+    border-bottom: 2px solid #6257e4;
+    color: #4d4d4d;
+}
+
+.tick .tick-star ul li.active span {
+    color: #4d4d4d;
+}
+
+.tick .tick-star ul li span {
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 6px 2px;
+    color: #a8a7a7;
+    text-align: center;
+    background-color: #f0f0f0;
+    font-size: 12px;
+}
+
+.tick .message-box {
+    width: 30%;
+    height: 100%;
+    margin: 12px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.tick .message-box p {
+    width: 27%;
+    height: 15%;
+    font-size: 16px;
+    border-bottom: 2px solid #6257e4;
+}
